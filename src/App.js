@@ -25,7 +25,7 @@ function App() {
         <Route path='/mediaTailor' element={<MediaTailor/>}></Route>
       </Routes>
       <Routes>
-        <Route path='/viewJSON/:id' element={<ViewJSON/>}></Route>
+        <Route path='/viewJSON/:serviceId/:jobId' element={<ViewJSON/>}></Route>
       </Routes>
       </BrowserRouter>
     </div>

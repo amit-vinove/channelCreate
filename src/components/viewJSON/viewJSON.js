@@ -6,12 +6,12 @@ import "./viewJSON.css";
 import Topbar from "../topbar/topbar";
 import { Link } from "react-router-dom";
 const ViewJSON = () => {
-  const { id } = useParams();
+  const { serviceId,jobId } = useParams();
   const [jsonData, setJsonData] = useState(null);
 
   useEffect(() => {
     const apiUrl = `http://107.109.131.23:8000/getjson`;
-    const payload = { serviceID: id };
+    const payload = { serviceID: serviceId,jobID:jobId };
 
     fetch(apiUrl, {
       method: "POST",

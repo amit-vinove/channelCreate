@@ -91,7 +91,7 @@ const ChannelCreateStatus = () => {
                                             <td>{item.status}</td>
                                             <td>{item.userId}</td>
                                             <td>
-                                              <Link to={`/viewJSON/${item.id}`}>
+                                              <Link to={`/viewJSON/${item.serviceId}/${item.jobId}`}>
                                                 <button
                                                   type="button"
                                                   className="btn btn-primary btn-sm"
